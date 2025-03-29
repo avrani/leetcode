@@ -1,3 +1,4 @@
+//one solution
 function flatArray1(myArr) {
     let result = []
     for (let i = 0; i < myArr.length; i++) {
@@ -10,6 +11,7 @@ function flatArray1(myArr) {
     return result;
 }
 
+//second solution
 function flatArray2(myArr) {
     return myArr.flat(Infinity);
 }
