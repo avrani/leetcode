@@ -1,0 +1,11 @@
+Phases for solving:
+
+Understanding the question
+
+Examples
+
+Brake it down 
+
+Solve
+
+Refactor (optimization)
