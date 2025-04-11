@@ -24,6 +24,9 @@ const twoSum2 = (nums, target) => {
         }
         numMap.set(nums[i], i);
     }
+    console.log('numMap',numMap);
+    console.log('nums',nums);
+    
     return [];
 }
 
