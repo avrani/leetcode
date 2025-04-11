@@ -1,5 +1,6 @@
 
 
+const elements=[2, 2, 1, 1, 1, 2, 2, 5, 5, 5, 5, 5, 5, 5, 2,5,5,5]
 const majorityElement = (arr) => {
     const storeObj = {}
     for (let i = 0; i < arr.length; i++) {
@@ -25,13 +26,14 @@ const majorityElement = (arr) => {
     }
 }
 
-const result = majorityElement([2, 2, 1, 1, 1, 2, 2, 5, 5, 5, 5, 5, 5, 5, 2]);
-
+const result = majorityElement(elements); 
+console.log('result',result);
 //complexity:
 //time  - O of n
 //memory -O of n
 
 //Better using Boyer-Moore Voting Algorithm:
+
 
 const majorityElement2 = (arr) => {
     let candidate = null;
@@ -43,8 +45,6 @@ const majorityElement2 = (arr) => {
         }
         count += (num === candidate) ? 1 : -1;
     }
-
-    // בדיקה שהוא באמת רוב
     let occurences = 0;
     for (let num of arr) {
         if (num === candidate) {
@@ -54,3 +54,7 @@ const majorityElement2 = (arr) => {
 
     return occurences > arr.length / 2 ? candidate : null;
 }
+
+
+const result2=majorityElement2(elements)
+console.log('result2',result2);
